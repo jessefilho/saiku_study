@@ -1,0 +1,6 @@
+type=OLAP
+name=foodmart
+driver=mondrian.olap4j.MondrianOlap4jDriver
+location=jdbc:mondrian:Jdbc=jdbc:postgresql://10.42.0.1:5432/foodmart; Catalog=D:/bandit/Downloads/saiku-server-2.6.1-SNAPSHOT/saiku-server/tomcat/webapps/saiku/WEB-INF/classes/saiku-datasources/FoodMart.xml;JdbcDrivers=org.postgresql.Driver;
+username=foodmart
+password=foodmart

@@ -1,5 +1,3 @@
-2020-07-04 21:38:26,385 WARN  [mondrian.rolap.RolapUtil] Mondrian: Warning: JDBC driver sun.jdbc.odbc.JdbcOdbcDriver not found
-2020-07-04 21:38:26,387 WARN  [mondrian.rolap.RolapUtil] Mondrian: Warning: JDBC driver oracle.jdbc.OracleDriver not found
 2020-07-04 21:38:26,932 DEBUG [mondrian.sql] 0: SqlTupleReader.readTuples [[Time].[Year]]: executing sql [select "time_by_day"."the_year" as "c0" from "time_by_day" as "time_by_day" group by "time_by_day"."the_year" order by CASE WHEN "time_by_day"."the_year" IS NULL THEN 1 ELSE 0 END, "time_by_day"."the_year" ASC]
 2020-07-04 21:38:26,938 DEBUG [mondrian.sql] 0: , exec 3 ms
 2020-07-04 21:38:26,939 DEBUG [mondrian.sql] 0: , exec+fetch 6 ms, 2 rows
@@ -36,21 +34,6 @@
 2020-07-04 21:38:27,023 DEBUG [mondrian.sql] 11: SqlMemberSource.getMemberChildren: executing sql [select "customer"."city" as "c0" from "customer" as "customer" where ("customer"."state_province" = 'CA') and UPPER("customer"."city") = UPPER('Los Angeles') group by "customer"."city" order by CASE WHEN "customer"."city" IS NULL THEN 1 ELSE 0 END, "customer"."city" ASC]
 2020-07-04 21:38:27,028 DEBUG [mondrian.sql] 11: , exec 4 ms
 2020-07-04 21:38:27,028 DEBUG [mondrian.sql] 11: , exec+fetch 5 ms, 1 rows
-2020-07-04 21:38:27,056 DEBUG [org.saiku.web.rest.util.StartupResource] Disabled INFO Logging for com.sun.jersey.spi.container.servlet.WebComponent
-2020-07-04 21:38:34,046 DEBUG [org.saiku.web.service.SessionService] Logging in with [org.springframework.security.core.userdetails.User@586034f: Username: admin; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_ADMIN,ROLE_USER]
-2020-07-04 21:38:36,845 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C	POST	 xml:true file:null
-2020-07-04 21:38:36,853 INFO  [org.saiku.olap.util.SaikuProperties] Saiku: properties loaded from 'file:/D:/bandit/Downloads/saiku-server-2.6.1-SNAPSHOT/saiku-server/tomcat/webapps/saiku/WEB-INF/classes/saiku.properties'
-2020-07-04 21:38:36,855 INFO  [org.saiku.olap.util.SaikuProperties] Saiku: loaded 0 system properties
-2020-07-04 21:38:45,987 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/COLUMNS/dimension/Measures/member/[Measures].[Store Cost]	POST
-2020-07-04 21:38:45,987 DEBUG [org.saiku.service.olap.OlapQueryService] move query: 7C6B0DB9-2A88-EE28-817B-092FE5AEB06C dimension Measures to axis COLUMNS  position0
-2020-07-04 21:38:57,735 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/ROWS/dimension/Gender/hierarchy/[Gender]/[Gender].[Gender]	POST
-2020-07-04 21:38:57,735 DEBUG [org.saiku.service.olap.OlapQueryService] move query: 7C6B0DB9-2A88-EE28-817B-092FE5AEB06C dimension Gender to axis ROWS  position0
-2020-07-04 21:38:57,750 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/resultflattened	GET
-2020-07-04 21:38:57,759 INFO  [org.saiku.service.olap.OlapQueryService] runId:0	Type:QM:
-SELECT
-NON EMPTY {Hierarchize({[Measures].[Store Cost]})} ON COLUMNS,
-NON EMPTY {Hierarchize({[Gender].[Gender].Members})} ON ROWS
-FROM [Sales]
 2020-07-04 21:38:57,778 DEBUG [mondrian.sql] 12: SqlTupleReader.readTuples [[Gender].[Gender]]: executing sql [select "customer"."gender" as "c0" from "customer" as "customer", "sales_fact_1997" as "sales_fact_1997" where "sales_fact_1997"."customer_id" = "customer"."customer_id" group by "customer"."gender" order by CASE WHEN "customer"."gender" IS NULL THEN 1 ELSE 0 END, "customer"."gender" ASC]
 2020-07-04 21:38:57,818 DEBUG [mondrian.sql] 12: , exec 40 ms
 2020-07-04 21:38:57,818 DEBUG [mondrian.sql] 12: , exec+fetch 40 ms, 2 rows
@@ -63,17 +46,6 @@ FROM [Sales]
 2020-07-04 21:38:57,855 DEBUG [mondrian.sql] 15: Segment.load: executing sql [select "time_by_day"."the_year" as "c0", "customer"."gender" as "c1", sum("sales_fact_1997"."store_cost") as "m0" from "time_by_day" as "time_by_day", "sales_fact_1997" as "sales_fact_1997", "customer" as "customer" where "sales_fact_1997"."time_id" = "time_by_day"."time_id" and "time_by_day"."the_year" = 1997 and "sales_fact_1997"."customer_id" = "customer"."customer_id" group by "time_by_day"."the_year", "customer"."gender"]
 2020-07-04 21:38:57,918 DEBUG [mondrian.sql] 15: , exec 63 ms
 2020-07-04 21:38:57,923 DEBUG [mondrian.sql] 15: , exec+fetch 68 ms, 2 rows
-2020-07-04 21:38:57,943 INFO  [org.saiku.service.olap.OlapQueryService] runId:0	Size: 2/3	Execute:	175ms	Format:	14ms	Totals:	2ms	 Total: 191ms
-2020-07-04 21:46:29,232 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/ROWS/dimension/Gender/hierarchy/[Gender]/[Gender].[Gender]	DELETE
-2020-07-04 21:46:29,232 DEBUG [org.saiku.service.olap.OlapQueryService] move query: 7C6B0DB9-2A88-EE28-817B-092FE5AEB06C dimension Gender to axis UNUSED  position-1
-2020-07-04 21:46:37,810 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/ROWS/dimension/Product/hierarchy/[Product]/[Product].[Product Family]	POST
-2020-07-04 21:46:37,810 DEBUG [org.saiku.service.olap.OlapQueryService] move query: 7C6B0DB9-2A88-EE28-817B-092FE5AEB06C dimension Product to axis ROWS  position0
-2020-07-04 21:46:37,824 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/resultflattened	GET
-2020-07-04 21:46:37,824 INFO  [org.saiku.service.olap.OlapQueryService] runId:1	Type:QM:
-SELECT
-NON EMPTY {Hierarchize({[Measures].[Store Cost]})} ON COLUMNS,
-NON EMPTY {Hierarchize({[Product].[Product Family].Members})} ON ROWS
-FROM [Sales]
 2020-07-04 21:46:37,847 DEBUG [mondrian.sql] 16: SqlTupleReader.readTuples [[Product].[Product Family]]: executing sql [select "product_class"."product_family" as "c0" from "product" as "product", "product_class" as "product_class", "sales_fact_1997" as "sales_fact_1997" where "product"."product_class_id" = "product_class"."product_class_id" and "sales_fact_1997"."product_id" = "product"."product_id" group by "product_class"."product_family" order by CASE WHEN "product_class"."product_family" IS NULL THEN 1 ELSE 0 END, "product_class"."product_family" ASC]
 2020-07-04 21:46:37,884 DEBUG [mondrian.sql] 16: , exec 35 ms
 2020-07-04 21:46:37,884 DEBUG [mondrian.sql] 16: , exec+fetch 37 ms, 3 rows
@@ -83,24 +55,9 @@ FROM [Sales]
 2020-07-04 21:46:37,886 DEBUG [mondrian.sql] 18: Segment.load: executing sql [select "time_by_day"."the_year" as "c0", "product_class"."product_family" as "c1", sum("sales_fact_1997"."store_cost") as "m0" from "time_by_day" as "time_by_day", "sales_fact_1997" as "sales_fact_1997", "product_class" as "product_class", "product" as "product" where "sales_fact_1997"."time_id" = "time_by_day"."time_id" and "time_by_day"."the_year" = 1997 and "sales_fact_1997"."product_id" = "product"."product_id" and "product"."product_class_id" = "product_class"."product_class_id" group by "time_by_day"."the_year", "product_class"."product_family"]
 2020-07-04 21:46:37,942 DEBUG [mondrian.sql] 18: , exec 55 ms
 2020-07-04 21:46:37,943 DEBUG [mondrian.sql] 18: , exec+fetch 56 ms, 3 rows
-2020-07-04 21:46:37,946 INFO  [org.saiku.service.olap.OlapQueryService] runId:1	Size: 2/4	Execute:	121ms	Format:	1ms	Totals:	0ms	 Total: 122ms
-2020-07-04 21:47:49,089 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/FILTER/dimension/Time/hierarchy/[Time]/[Time].[Year]	POST
-2020-07-04 21:47:49,089 DEBUG [org.saiku.service.olap.OlapQueryService] move query: 7C6B0DB9-2A88-EE28-817B-092FE5AEB06C dimension Time to axis FILTER  position0
-2020-07-04 21:47:49,104 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/result/metadata/dimensions/Time/hierarchies/[Time]/levels/[Time].[Year]	GET
-2020-07-04 21:47:49,123 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/FILTER/dimension/Time	GET
-2020-07-04 21:47:53,335 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/FILTER/dimension/Time	PUT	
-2020-07-04 21:47:53,348 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/axis/FILTER/dimension/Time	GET
-2020-07-04 21:47:53,366 DEBUG [org.saiku.web.rest.resources.QueryResource] TRACK		/query/7C6B0DB9-2A88-EE28-817B-092FE5AEB06C/resultflattened	GET
-2020-07-04 21:47:53,366 INFO  [org.saiku.service.olap.OlapQueryService] runId:2	Type:QM:
-SELECT
-NON EMPTY {Hierarchize({[Measures].[Store Cost]})} ON COLUMNS,
-NON EMPTY {Hierarchize({[Product].[Product Family].Members})} ON ROWS
-FROM [Sales]
-WHERE {[Time].[1997], [Time].[1998]}
 2020-07-04 21:47:53,388 DEBUG [mondrian.sql] 19: SqlTupleReader.readTuples [[Product].[Product Family]]: executing sql [select "product_class"."product_family" as "c0" from "product" as "product", "product_class" as "product_class", "sales_fact_1997" as "sales_fact_1997", "time_by_day" as "time_by_day" where "product"."product_class_id" = "product_class"."product_class_id" and "sales_fact_1997"."product_id" = "product"."product_id" and "sales_fact_1997"."time_id" = "time_by_day"."time_id" and "time_by_day"."the_year" in (1997, 1998) group by "product_class"."product_family" order by CASE WHEN "product_class"."product_family" IS NULL THEN 1 ELSE 0 END, "product_class"."product_family" ASC]
 2020-07-04 21:47:53,435 DEBUG [mondrian.sql] 19: , exec 47 ms
 2020-07-04 21:47:53,435 DEBUG [mondrian.sql] 19: , exec+fetch 47 ms, 3 rows
 2020-07-04 21:47:53,443 DEBUG [mondrian.sql] 20: Segment.load: executing sql [select "time_by_day"."the_year" as "c0", "product_class"."product_family" as "c1", sum("sales_fact_1997"."store_cost") as "m0" from "time_by_day" as "time_by_day", "sales_fact_1997" as "sales_fact_1997", "product_class" as "product_class", "product" as "product" where "sales_fact_1997"."time_id" = "time_by_day"."time_id" and "time_by_day"."the_year" = 1998 and "sales_fact_1997"."product_id" = "product"."product_id" and "product"."product_class_id" = "product_class"."product_class_id" group by "time_by_day"."the_year", "product_class"."product_family"]
 2020-07-04 21:47:53,459 DEBUG [mondrian.sql] 20: , exec 16 ms
 2020-07-04 21:47:53,460 DEBUG [mondrian.sql] 20: , exec+fetch 17 ms, 0 rows
-2020-07-04 21:47:53,462 INFO  [org.saiku.service.olap.OlapQueryService] runId:2	Size: 2/4	Execute:	95ms	Format:	1ms	Totals:	0ms	 Total: 96ms

@@ -125,7 +125,7 @@
    <!-- Special Log File specifically for Mondrian SQL Statements -->
    <!-- ========================================================= -->
 
-   <!-- 
+   <!--
    <appender name="SQLLOG" class="org.apache.log4j.RollingFileAppender">
      <param name="File" value="${catalina.base}/logs/mondrian_sql.log"/>
      <param name="Append" value="false"/>
@@ -141,5 +141,20 @@
       <appender-ref ref="SQLLOG"/>
    </category>
    -->
+
+   <appender name="SQLLOG" class="org.apache.log4j.RollingFileAppender">
+     <param name="File" value="${catalina.base}/logs/mondrian_sql.log"/>
+     <param name="Append" value="false"/>
+     <param name="MaxFileSize" value="500KB"/>
+     <param name="MaxBackupIndex" value="1"/>
+     <layout class="org.apache.log4j.PatternLayout">
+       <param name="ConversionPattern" value="%d %-5p [%c] %m%n"/>
+     </layout>
+   </appender>
+
+   <category name="mondrian.sql">
+      <priority value="DEBUG"/>
+      <appender-ref ref="SQLLOG"/>
+   </category>
    
 </log4j:configuration>

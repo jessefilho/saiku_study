@@ -1,0 +1,180 @@
+jul 04, 2020 11:23:59 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_231\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\bandit\AppData\Local\Microsoft\WindowsApps;C:\Users\bandit\AppData\Roaming\npm;.
+jul 04, 2020 11:23:59 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+jul 04, 2020 11:23:59 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 278 ms
+jul 04, 2020 11:23:59 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+jul 04, 2020 11:23:59 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.24
+jul 04, 2020 11:23:59 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+jul 04, 2020 11:23:59 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory saiku
+jul 04, 2020 11:24:03 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.saiku.web
+jul 04, 2020 11:24:03 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.saiku.web.rest.resources.BasicRepositoryResource
+  class org.saiku.web.rest.resources.QueryResource
+  class org.saiku.web.rest.resources.InfoResource
+  class org.saiku.web.rest.resources.BasicRepositoryResource2
+  class org.saiku.web.rest.resources.DataSourceResource
+  class org.saiku.web.rest.resources.OlapDiscoverResource
+  class org.saiku.web.rest.resources.BasicTagRepositoryResource
+  class org.saiku.web.rest.resources.StatisticsResource
+  class org.saiku.web.rest.resources.ExporterResource
+  class org.saiku.web.rest.resources.SessionResource
+  class org.saiku.web.rest.resources.FilterRepositoryResource
+jul 04, 2020 11:24:03 AM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+jul 04, 2020 11:24:03 AM org.codehaus.enunciate.modules.jersey.EnunciateJerseyServletContainer configure
+INFO: org.codehaus.enunciate.modules.amf.JAXRSProvider not found.
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, datasourceResourceBean, of type org.saiku.web.rest.resources.DataSourceResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, olapDiscoverBean, of type org.saiku.web.rest.resources.OlapDiscoverResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, queryResource, of type org.saiku.web.rest.resources.QueryResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, sessionResource, of type org.saiku.web.rest.resources.SessionResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, infoResource, of type org.saiku.web.rest.resources.InfoResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, repositoryBean, of type org.saiku.web.rest.resources.BasicRepositoryResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, repository2bean, of type org.saiku.web.rest.resources.BasicRepositoryResource2 as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, tagRepositoryBean, of type org.saiku.web.rest.resources.BasicTagRepositoryResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, filterRepositoryBean, of type org.saiku.web.rest.resources.FilterRepositoryResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, exporterBean, of type org.saiku.web.rest.resources.ExporterResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, statsBean, of type org.saiku.web.rest.resources.StatisticsResource as a root resource class
+jul 04, 2020 11:24:03 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.11 12/09/2011 10:27 AM'
+jul 04, 2020 11:24:03 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+jul 04, 2020 11:24:03 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+jul 04, 2020 11:24:03 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/8  config=null
+jul 04, 2020 11:24:03 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3951 ms
+jul 04, 2020 11:36:22 AM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+jul 04, 2020 11:36:23 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [org.apache.commons.vfs.cache.SoftRefFilesCache$SoftRefReleaseThread] but has failed to stop it. This is very likely to create a memory leak.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.ClassFactory$1@16943e88]) and a value of type [java.util.WeakHashMap] (value [{class javax.xml.bind.annotation.W3CDomHandler=java.lang.ref.WeakReference@4604b900}]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Name of currently proxied bean]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Prototype beans currently in creation]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Request attributes]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Name of currently proxied bean]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Prototype beans currently in creation]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Locale context]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedInheritableThreadLocal] (value [Request context]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedInheritableThreadLocal] (value [Locale context]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 11:36:23 AM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+jul 04, 2020 11:36:28 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_231\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\bandit\AppData\Local\Microsoft\WindowsApps;C:\Users\bandit\AppData\Roaming\npm;.
+jul 04, 2020 11:36:28 AM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+jul 04, 2020 11:36:28 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 184 ms
+jul 04, 2020 11:36:28 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+jul 04, 2020 11:36:28 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.24
+jul 04, 2020 11:36:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+jul 04, 2020 11:36:28 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory saiku
+jul 04, 2020 11:36:29 AM com.sun.jersey.api.core.PackagesResourceConfig init
+INFO: Scanning for root resource and provider classes in the packages:
+  org.saiku.web
+jul 04, 2020 11:36:29 AM com.sun.jersey.api.core.ScanningResourceConfig logClasses
+INFO: Root resource classes found:
+  class org.saiku.web.rest.resources.SessionResource
+  class org.saiku.web.rest.resources.StatisticsResource
+  class org.saiku.web.rest.resources.QueryResource
+  class org.saiku.web.rest.resources.BasicRepositoryResource2
+  class org.saiku.web.rest.resources.InfoResource
+  class org.saiku.web.rest.resources.FilterRepositoryResource
+  class org.saiku.web.rest.resources.BasicRepositoryResource
+  class org.saiku.web.rest.resources.DataSourceResource
+  class org.saiku.web.rest.resources.ExporterResource
+  class org.saiku.web.rest.resources.BasicTagRepositoryResource
+  class org.saiku.web.rest.resources.OlapDiscoverResource
+jul 04, 2020 11:36:29 AM com.sun.jersey.api.core.ScanningResourceConfig init
+INFO: No provider classes found.
+jul 04, 2020 11:36:29 AM org.codehaus.enunciate.modules.jersey.EnunciateJerseyServletContainer configure
+INFO: org.codehaus.enunciate.modules.amf.JAXRSProvider not found.
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, datasourceResourceBean, of type org.saiku.web.rest.resources.DataSourceResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, olapDiscoverBean, of type org.saiku.web.rest.resources.OlapDiscoverResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, queryResource, of type org.saiku.web.rest.resources.QueryResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, sessionResource, of type org.saiku.web.rest.resources.SessionResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, infoResource, of type org.saiku.web.rest.resources.InfoResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, repositoryBean, of type org.saiku.web.rest.resources.BasicRepositoryResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, repository2bean, of type org.saiku.web.rest.resources.BasicRepositoryResource2 as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, tagRepositoryBean, of type org.saiku.web.rest.resources.BasicTagRepositoryResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, filterRepositoryBean, of type org.saiku.web.rest.resources.FilterRepositoryResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, exporterBean, of type org.saiku.web.rest.resources.ExporterResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.spi.spring.container.SpringComponentProviderFactory registerSpringBeans
+INFO: Registering Spring bean, statsBean, of type org.saiku.web.rest.resources.StatisticsResource as a root resource class
+jul 04, 2020 11:36:29 AM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+INFO: Initiating Jersey application, version 'Jersey: 1.11 12/09/2011 10:27 AM'
+jul 04, 2020 11:36:29 AM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+jul 04, 2020 11:36:29 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+jul 04, 2020 11:36:29 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/7  config=null
+jul 04, 2020 11:36:29 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1509 ms
+jul 04, 2020 12:10:49 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+jul 04, 2020 12:10:50 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [org.apache.commons.vfs.cache.SoftRefFilesCache$SoftRefReleaseThread] but has failed to stop it. This is very likely to create a memory leak.
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.ClassFactory$1@1500e009]) and a value of type [java.util.WeakHashMap] (value [{class javax.xml.bind.annotation.W3CDomHandler=java.lang.ref.WeakReference@1fd386c3}]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Name of currently proxied bean]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Prototype beans currently in creation]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Request attributes]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedThreadLocal] (value [Locale context]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedInheritableThreadLocal] (value [Request context]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 12:10:50 PM org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [org.springframework.core.NamedInheritableThreadLocal] (value [Locale context]) and a value of type [null] (value [null]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+jul 04, 2020 12:10:50 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080

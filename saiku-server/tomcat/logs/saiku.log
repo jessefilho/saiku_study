@@ -1,0 +1,1 @@
+2020-07-04 14:50:51,191 DEBUG [org.saiku.web.rest.util.StartupResource] Disabled INFO Logging for com.sun.jersey.spi.container.servlet.WebComponent
